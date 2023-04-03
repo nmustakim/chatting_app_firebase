@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "86209343155",
+    "project_id": "chatting-e3203",
+    "storage_bucket": "chatting-e3203.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86209343155:android:f7121a11118bb90a510ac6",
+        "android_client_info": {
+          "package_name": "com.nmustakim.chatting_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86209343155-usj5kc3imkv4s7pid9ve6j61sjja0o77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCatZO2pVCNF_lb-GvhdccYjZCGDTg_J_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86209343155-usj5kc3imkv4s7pid9ve6j61sjja0o77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
