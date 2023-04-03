@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       controller: messageController,
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.all(8),
+                        contentPadding: const EdgeInsets.all(8),
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(24))),
                     )),
