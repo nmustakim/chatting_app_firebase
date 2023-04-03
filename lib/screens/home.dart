@@ -53,12 +53,15 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(elevation:0,backgroundColor:Colors.deepPurple,automaticallyImplyLeading: false,actions: [IconButton(onPressed: (){Navigator.pop(context);}, icon: const Icon(Icons.close))],),
         body: SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
           children: [
-            const SizedBox(height: 20,),
+
+
+            const Messages(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
@@ -69,19 +72,21 @@ class _HomeState extends State<Home> {
                     child: TextField(
                       controller: messageController,
                       decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.all(8),
+                          contentPadding: const EdgeInsets.all(8),
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(24))),
                     )),
-                TextButton(
+                IconButton(
                     onPressed: () {
                       saveMessage();
                       messageController!.clear();
                     },
-                    child: const Text('Send'))
+                    icon:const Padding(
+                      padding: EdgeInsets.only(bottom: 16),
+                      child: Icon(Icons.send,size: 42,color: Colors.deepPurple,),
+                    ))
               ],
             ),
-            const Messages()
 
 
           ],
@@ -133,7 +138,9 @@ class MessageContainer extends StatelessWidget {
         children:
         [
           Text(sender,style: const TextStyle(fontSize: 10),),
-          Text(msgText)
+          Container(
+            padding: const EdgeInsets.all(16),
+              decoration:isMe == true ? const BoxDecoration(color:Colors.deepPurple,borderRadius: BorderRadius.only(topLeft: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))):const BoxDecoration(color:Colors.white,borderRadius: BorderRadius.only(topRight: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))),child: Text(msgText))
 
       ],)
       ,);
