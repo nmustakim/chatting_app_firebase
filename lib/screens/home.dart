@@ -111,7 +111,9 @@ for(QueryDocumentSnapshot qds in snapshot.data!.docs){
   messageWidgets.add(messageContainer);
 }
 return Expanded(
-  child:   ListView (children:
+  child:   ListView (
+    reverse: true,
+      children:
       messageWidgets
   ),
 );
@@ -137,10 +139,10 @@ class MessageContainer extends StatelessWidget {
         crossAxisAlignment: isMe == true ? CrossAxisAlignment.end : CrossAxisAlignment.start,
         children:
         [
-          Text(sender,style: const TextStyle(fontSize: 10),),
+          Text(sender,style: const TextStyle(fontSize: 10,),),
           Container(
             padding: const EdgeInsets.all(16),
-              decoration:isMe == true ? const BoxDecoration(color:Colors.deepPurple,borderRadius: BorderRadius.only(topLeft: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))):const BoxDecoration(color:Colors.white,borderRadius: BorderRadius.only(topRight: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))),child: Text(msgText))
+              decoration:isMe == true ? const BoxDecoration(color:Colors.deepPurple,borderRadius: BorderRadius.only(topLeft: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))):const BoxDecoration(color:Colors.white,borderRadius: BorderRadius.only(topRight: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))),child: Text(msgText,style: TextStyle(color: isMe == true ? Colors.white : Colors.black),))
 
       ],)
       ,);
