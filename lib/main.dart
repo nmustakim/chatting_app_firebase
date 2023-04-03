@@ -1,4 +1,3 @@
-import 'package:chatting_app/screens/login.dart';
 import 'package:chatting_app/screens/welcome.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -29,10 +28,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
-      theme: ThemeData.dark(),
+    return  const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Welcome(),
+      home: Welcome(),
     );
   }
 }

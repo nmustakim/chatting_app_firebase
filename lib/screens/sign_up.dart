@@ -23,25 +23,19 @@ class _RegistrationState extends State<Registration> {
         child: Form(
           key: _registrationFormKey,
           child: Padding(
-            padding: const EdgeInsets.only(left: 27, right: 28),
+            padding: const EdgeInsets.all(24.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const SizedBox(height: 30,),
                 Center(
-                  child: Container(
-                    margin: const EdgeInsets.only(top: 100),
-                    width: 144,
-                    height: 139,
-                    decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(11)),
-                    child: Text(
-                      'Sign Up',
-                      style: TextStyle(
-                          fontFamily: GoogleFonts.gochiHand().fontFamily,
-                          fontSize: 44.56,
-                          fontWeight: FontWeight.w400,
-                          color: const Color(0XFFB6158A)),
-                    ),
+                  child: Text(
+                    'Sign Up',
+                    style: TextStyle(
+                        fontFamily: GoogleFonts.gochiHand().fontFamily,
+                        fontSize: 44.56,
+                        fontWeight: FontWeight.w400,
+                        color: const Color(0XFFB6158A)),
                   ),
                 ),
                 const SizedBox(
@@ -51,7 +45,7 @@ class _RegistrationState extends State<Registration> {
                   'Hi, Welcome Back! 👋',
                   style: TextStyle(
                       fontFamily: GoogleFonts.manrope().fontFamily,
-                      fontSize: 25,
+                      fontSize: 20,
                       fontWeight: FontWeight.w600,
                       color: const Color(0XFF000000)),
                 ),
@@ -188,7 +182,7 @@ class _RegistrationState extends State<Registration> {
                           'I accept all the terms and privacy policy',
                           style: TextStyle(
                               fontFamily: GoogleFonts.manrope().fontFamily,
-                              fontSize: 14,
+                              fontSize: 12,
                               fontWeight: FontWeight.w600,
                               color:  Colors.red),
                         ),
@@ -198,7 +192,7 @@ class _RegistrationState extends State<Registration> {
                   ],
                 ),
                 const SizedBox(
-                  height: 125,
+                  height: 60,
                 ),
                 SizedBox(
                     height: 45,
@@ -223,13 +217,13 @@ class _RegistrationState extends State<Registration> {
                           }
                           else{
                             Get.snackbar(snackPosition: SnackPosition.TOP,'error','\'PLease accept the terms & privacy policy to continue');
-                            
+
                           }
 
                         },
                         child: const Center(child: Text('Sign Up')))),
                 const SizedBox(
-                  height: 60,
+                  height: 40,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

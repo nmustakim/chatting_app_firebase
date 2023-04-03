@@ -140,9 +140,10 @@ class MessageContainer extends StatelessWidget {
         children:
         [
           Text(sender,style: const TextStyle(fontSize: 10,),),
+          const SizedBox(height: 8,),
           Container(
             padding: const EdgeInsets.all(16),
-              decoration:isMe == true ? const BoxDecoration(color:Colors.deepPurple,borderRadius: BorderRadius.only(topLeft: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))):const BoxDecoration(color:Colors.white,borderRadius: BorderRadius.only(topRight: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))),child: Text(msgText,style: TextStyle(color: isMe == true ? Colors.white : Colors.black),))
+              decoration:isMe == true ? const BoxDecoration(color:Colors.deepPurple,borderRadius: BorderRadius.only(topLeft: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))):const BoxDecoration(color:Colors.indigo,borderRadius: BorderRadius.only(topRight: Radius.circular(24),bottomLeft: Radius.circular(24),bottomRight: Radius.circular(24))),child: Text(msgText,style: TextStyle(color: isMe == true ? Colors.white : Colors.black),))
 
       ],)
       ,);

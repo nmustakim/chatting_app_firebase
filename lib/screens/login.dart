@@ -26,24 +26,15 @@ class _LoginFormState extends State<LoginForm> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const SizedBox(height: 40,),
                 Center(
-                  child: Container(
-                    margin: const EdgeInsets.only(top: 58),
-                    width: 144,
-                    height: 139,
-                    decoration:
-                    BoxDecoration(borderRadius: BorderRadius.circular(11)),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(14, 34, 34, 52),
-                      child: Text(
-                        'Login',
-                        style: TextStyle(
-                            fontFamily: GoogleFonts.gochiHand().fontFamily,
-                            fontSize: 44.56,
-                            fontWeight: FontWeight.w400,
-                            color: const Color(0XFFB6158A)),
-                      ),
-                    ),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                        fontFamily: GoogleFonts.gochiHand().fontFamily,
+                        fontSize: 44.56,
+                        fontWeight: FontWeight.w400,
+                        color: const Color(0XFFB6158A)),
                   ),
                 ),
                 const SizedBox(
@@ -53,7 +44,7 @@ class _LoginFormState extends State<LoginForm> {
                   'Hi, Welcome Back! 👋',
                   style: TextStyle(
                       fontFamily: GoogleFonts.manrope().fontFamily,
-                      fontSize: 25,
+                      fontSize: 20,
                       fontWeight: FontWeight.w600,
                       color: const Color(0XFF000000)),
                 ),
@@ -185,7 +176,7 @@ class _LoginFormState extends State<LoginForm> {
                   ],
                 ),
                 const SizedBox(
-                  height: 125,
+                  height: 80,
                 ),
                 SizedBox(
                     height: 45,
@@ -202,7 +193,7 @@ class _LoginFormState extends State<LoginForm> {
                         ,
                         child: const Center(child: Text('Login')))),
                 const SizedBox(
-                  height: 100,
+                  height: 50,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
