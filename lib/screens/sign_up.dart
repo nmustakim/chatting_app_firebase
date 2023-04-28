@@ -213,7 +213,7 @@ class _RegistrationState extends State<Registration> {
                               ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(
                                       content:
-                                      Center(child: Text('Login failed'))));
+                                      Center(child: Text('Sign up failed'))));
                             }
                           }
                           else{
@@ -222,28 +222,31 @@ class _RegistrationState extends State<Registration> {
                           }
 
                         },
-                        child:  Center(child: InkWell(onTap:(){Get.to(const LoginForm());},child: Text('Sign Up'))))),
+                        child: const Center(child: Text('Sign Up')))),
                 const SizedBox(
                   height: 40,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text('Already have an account?',
+                  children:  [
+                    const Text('Already have an account?',
                         style: TextStyle(
                          
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
                             color: Color(0XFF999EA1))),
-                    SizedBox(
+                    const SizedBox(
                       width: 9,
                     ),
-                    Text('Sign In',
-                        style: TextStyle(
-                         
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                            color: Color(0XFF160062)))
+                    InkWell(
+onTap:(){ Get.to(()=>const LoginForm());},
+                      child: const Text('Sign In',
+                          style: TextStyle(
+
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0XFF160062))),
+                    )
                   ],
                 )
               ],

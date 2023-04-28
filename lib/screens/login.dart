@@ -209,7 +209,7 @@ class _LoginFormState extends State<LoginForm> {
                       width: 9,
                     ),
                     InkWell(
-                      onTap:(){Get.to( const Registration());},
+                      onTap:(){Get.to( ()=>const Registration());},
                       child: const Text('Sign Up',
                           style: TextStyle(
 
