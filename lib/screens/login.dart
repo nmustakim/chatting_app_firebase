@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import '../auth/auth.dart';
 
-import '../logic/auth.dart';
+
 
 class LoginForm extends StatefulWidget {
   const LoginForm({Key? key}) : super(key: key);
@@ -27,45 +27,44 @@ class _LoginFormState extends State<LoginForm> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 40,),
-                Center(
+                const Center(
                   child: Text(
                     'Login',
                     style: TextStyle(
-                        fontFamily: GoogleFonts.gochiHand().fontFamily,
                         fontSize: 44.56,
                         fontWeight: FontWeight.w400,
-                        color: const Color(0XFFB6158A)),
+                        color: Color(0XFFB6158A)),
                   ),
                 ),
                 const SizedBox(
                   height: 15,
                 ),
-                Text(
+                const Text(
                   'Hi, Welcome Back! 👋',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF000000)),
+                      color: Color(0XFF000000)),
                 ),
-                Text(
+                const Text(
                   'Hello again, you’ve been missed!',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF999EA1)),
+                      color: Color(0XFF999EA1)),
                 ),
                 const SizedBox(
                   height: 32,
                 ),
-                Text(
+                const Text(
                   'Email',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF00004D)),
+                      color: Color(0XFF00004D)),
                 ),
                 const SizedBox(
                   height: 7,
@@ -92,13 +91,13 @@ class _LoginFormState extends State<LoginForm> {
                 const SizedBox(
                   height: 12,
                 ),
-                Text(
+                const Text(
                   'Password',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF00004D)),
+                      color: Color(0XFF00004D)),
                 ),
                 const SizedBox(
                   height: 7,
@@ -157,22 +156,22 @@ class _LoginFormState extends State<LoginForm> {
                         const SizedBox(
                           width: 7,
                         ),
-                        Text(
+                        const Text(
                           'Remember Me',
                           style: TextStyle(
-                              fontFamily: GoogleFonts.manrope().fontFamily,
+
                               fontSize: 14,
                               fontWeight: FontWeight.w600,
-                              color: const Color(0XFF000000)),
+                              color: Color(0XFF000000)),
                         ),
                       ],
                     ),
-                    Text('Forgot Password',
+                    const Text('Forgot Password',
                         style: TextStyle(
-                            fontFamily: GoogleFonts.manrope().fontFamily,
+
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: const Color(0XFFFB344F))),
+                            color: Color(0XFFFB344F))),
                   ],
                 ),
                 const SizedBox(
@@ -197,22 +196,22 @@ class _LoginFormState extends State<LoginForm> {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Text('Don\'t have an account?',
                         style: TextStyle(
-                            fontFamily: GoogleFonts.manrope().fontFamily,
+
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: const Color(0XFF999EA1))),
-                    const SizedBox(
+                            color: Color(0XFF999EA1))),
+                    SizedBox(
                       width: 9,
                     ),
                     Text('Sign Up',
                         style: TextStyle(
-                            fontFamily: GoogleFonts.manrope().fontFamily,
+
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: const Color(0XFF160062)))
+                            color: Color(0XFF160062)))
                   ],
                 )
               ],

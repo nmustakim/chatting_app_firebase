@@ -8,14 +8,14 @@ class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: SingleChildScrollView(
-        child: SafeArea(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(24, 0, 24 , 128),
           child: Column(
+mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(height:450,width:MediaQuery.of(context).size.width,decoration:const BoxDecoration(color:Colors.deepPurple,borderRadius: BorderRadius.only(bottomRight: Radius.circular(200),bottomLeft: Radius.circular(200))),child:const Center(child: Padding(
-                padding: EdgeInsets.only(top: 80),
-                child: Text('Welcome',style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,color:Colors.white),),
-              ))),
+              const Expanded(child: SizedBox()),
+              const Center(child: Text('ChatEasy',style: TextStyle(fontSize: 50,fontWeight: FontWeight.bold,))),
               const SizedBox(height: 80,),
               SizedBox(height:48,width:300,child: ElevatedButton(style: ElevatedButton.styleFrom(backgroundColor:Colors.deepPurple,shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24))),onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginForm()));}, child: const Text("Login"))),
               const SizedBox(height: 16,),

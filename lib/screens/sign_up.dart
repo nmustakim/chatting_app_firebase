@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import '../logic/auth.dart';
+
+import '../auth/auth.dart';
+
 
 class Registration extends StatefulWidget {
   const Registration({Key? key}) : super(key: key);
@@ -28,45 +29,44 @@ class _RegistrationState extends State<Registration> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 30,),
-                Center(
+                const Center(
                   child: Text(
                     'Sign Up',
                     style: TextStyle(
-                        fontFamily: GoogleFonts.gochiHand().fontFamily,
                         fontSize: 44.56,
                         fontWeight: FontWeight.w400,
-                        color: const Color(0XFFB6158A)),
+                        color: Color(0XFFB6158A)),
                   ),
                 ),
                 const SizedBox(
                   height: 15,
                 ),
-                Text(
+                const Text(
                   'Hi, Welcome Back! 👋',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+                   
                       fontSize: 20,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF000000)),
+                      color: Color(0XFF000000)),
                 ),
-                Text(
+                const Text(
                   'Hello again, you’ve been missed!',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+                   
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF999EA1)),
+                      color: Color(0XFF999EA1)),
                 ),
                 const SizedBox(
                   height: 32,
                 ),
-                Text(
+                const Text(
                   'Email',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+                   
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF00004D)),
+                      color: Color(0XFF00004D)),
                 ),
                 const SizedBox(
                   height: 7,
@@ -102,13 +102,13 @@ class _RegistrationState extends State<Registration> {
                 const SizedBox(
                   height: 12,
                 ),
-                Text(
+                const Text(
                   'Password',
                   style: TextStyle(
-                      fontFamily: GoogleFonts.manrope().fontFamily,
+                   
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
-                      color: const Color(0XFF00004D)),
+                      color: Color(0XFF00004D)),
                 ),
                 const SizedBox(
                   height: 7,
@@ -178,10 +178,10 @@ class _RegistrationState extends State<Registration> {
                         const SizedBox(
                           width: 7,
                         ),
-                        Text(
+                        const Text(
                           'I accept all the terms and privacy policy',
                           style: TextStyle(
-                              fontFamily: GoogleFonts.manrope().fontFamily,
+                           
                               fontSize: 12,
                               fontWeight: FontWeight.w600,
                               color:  Colors.red),
@@ -228,21 +228,21 @@ class _RegistrationState extends State<Registration> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text('Already have an account?',
+                    const Text('Already have an account?',
                         style: TextStyle(
-                            fontFamily: GoogleFonts.manrope().fontFamily,
+                         
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: const Color(0XFF999EA1))),
+                            color: Color(0XFF999EA1))),
                     const SizedBox(
                       width: 9,
                     ),
-                    Text('Sign In',
+                    const Text('Sign In',
                         style: TextStyle(
-                            fontFamily: GoogleFonts.manrope().fontFamily,
+                         
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
-                            color: const Color(0XFF160062)))
+                            color: Color(0XFF160062)))
                   ],
                 )
               ],
