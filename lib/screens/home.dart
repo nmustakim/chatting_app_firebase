@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +55,24 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(elevation:0,backgroundColor:Colors.deepPurple,automaticallyImplyLeading: false,actions: [IconButton(onPressed: (){Navigator.pop(context);}, icon: const Icon(Icons.close))],),
+      appBar: AppBar(elevation:0,backgroundColor:Colors.deepPurple,actions: [IconButton(onPressed: (){exit(0);}, icon: const Icon(Icons.close))],),
+drawer: Drawer(
+
+    child: ListView(
+      padding: EdgeInsets.zero,
+      children: [
+        DrawerHeader(
+          decoration:  const BoxDecoration(
+color: Colors.deepPurple
+          ),
+          child: Center(child: Text(user!.email!,style: const TextStyle(fontSize: 20,color: Colors.white),),),
+
+          ),
+
+      ],
+    ),
+  ),
+
         body: SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(10.0),
