@@ -1,3 +1,4 @@
+import 'package:chatting_app/screens/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -42,7 +43,7 @@ class _RegistrationState extends State<Registration> {
                   height: 15,
                 ),
                 const Text(
-                  'Hi, Welcome Back! 👋',
+                  'Welcome to ChatEasy ! 👋',
                   style: TextStyle(
                    
                       fontSize: 20,
@@ -50,7 +51,7 @@ class _RegistrationState extends State<Registration> {
                       color: Color(0XFF000000)),
                 ),
                 const Text(
-                  'Hello again, you’ve been missed!',
+                  'PLease sign up to explore!',
                   style: TextStyle(
                    
                       fontSize: 14,
@@ -221,23 +222,23 @@ class _RegistrationState extends State<Registration> {
                           }
 
                         },
-                        child: const Center(child: Text('Sign Up')))),
+                        child:  Center(child: InkWell(onTap:(){Get.to(const LoginForm());},child: Text('Sign Up'))))),
                 const SizedBox(
                   height: 40,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Text('Already have an account?',
+                  children: const [
+                    Text('Already have an account?',
                         style: TextStyle(
                          
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
                             color: Color(0XFF999EA1))),
-                    const SizedBox(
+                    SizedBox(
                       width: 9,
                     ),
-                    const Text('Sign In',
+                    Text('Sign In',
                         style: TextStyle(
                          
                             fontSize: 14,

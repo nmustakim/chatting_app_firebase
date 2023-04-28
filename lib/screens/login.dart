@@ -1,4 +1,6 @@
+import 'package:chatting_app/screens/sign_up.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../auth/auth.dart';
 
 
@@ -196,22 +198,25 @@ class _LoginFormState extends State<LoginForm> {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    Text('Don\'t have an account?',
+                  children: [
+                    const Text('Don\'t have an account?',
                         style: TextStyle(
 
                             fontSize: 14,
                             fontWeight: FontWeight.w600,
                             color: Color(0XFF999EA1))),
-                    SizedBox(
+                    const SizedBox(
                       width: 9,
                     ),
-                    Text('Sign Up',
-                        style: TextStyle(
+                    InkWell(
+                      onTap:(){Get.to( const Registration());},
+                      child: const Text('Sign Up',
+                          style: TextStyle(
 
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                            color: Color(0XFF160062)))
+                              fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0XFF160062))),
+                    )
                   ],
                 )
               ],
