@@ -15,7 +15,7 @@ class Auth {
 
       final user = FirebaseAuth.instance.currentUser;
       if(user != null){
-        Get.to(()=> const LoginForm());
+        Get.offAll(()=> const LoginForm());
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
@@ -36,7 +36,7 @@ class Auth {
       );
       final user = FirebaseAuth.instance.currentUser;
       if(user != null){
-        Get.to(()=> const Home());
+        Get.offAll(()=> const Home());
       }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
